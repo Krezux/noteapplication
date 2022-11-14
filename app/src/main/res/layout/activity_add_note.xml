@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.AddNote">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_note_title"
+        android:text="ADD NEW NOTE"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_title"
+            android:hint="NOTE NAME"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_description"
+            android:hint="NOTE"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:lines="10"
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE NOTE"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/create_note_button"
+
+        />
+
+</LinearLayout>
